@@ -2,8 +2,8 @@
 <html>
 <head>
     <!--Import Google Icon Font-->
-<!--    <link href="https://fonts.lug.ustc.edu.cn/icon?family=Material+Icons" rel="stylesheet"> -->
-<!--    <link href="https://fonts.lug.ustc.edu.cn/css?family=Roboto" rel="stylesheet"> -->
+    <link href="https://fonts.lug.ustc.edu.cn/icon?family=Material+Icons" rel="stylesheet"> 
+    <link href="https://fonts.lug.ustc.edu.cn/css?family=Roboto" rel="stylesheet"> 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection"/>
 
@@ -31,7 +31,7 @@
 
     <script type="text/javascript">
         function bottom() {
-            var elmnt = document.getElementById("content");
+            var elmnt = document.getElementById("batas");
             elmnt.scrollIntoView();
             //window.setTimeout( function () { top(); }, 2000 );
             };
@@ -229,10 +229,11 @@
                         </div>
                                                     
                         <div id="file-form">
-                        <div id="batas"></div>
-                            <p style="margin-top: 30px">
+                        <div id="batas" style="height: 1px;display: block"></div>
+                            <p id="batas" style="margin-top: 30px">
                                 <button id="background-img-select" class="waves-effect waves-light btn panjang">Tambahkan Gambar Latar</button>
                             </p>
+                        
                             <p style="margin-top: 10px">
                                 <button id="logo-img-select" class="waves-effect waves-light btn panjang">Tambahkan Logo</button>
                             </p>
