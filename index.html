@@ -231,11 +231,10 @@
                         <div id="file-form">
                         
                             <p  style="margin-top: 0px;margin-bottom:5px">
-
                                 <button id="background-img-select" class="waves-effect waves-light btn panjang">Tambahkan Gambar Latar</button>
                             </p>
                         
-                            <p style="margin-top: 5px;;margin-bottom:5px">
+                            <p style="margin-top: 5px;margin-bottom:5px">
                                 <button id="logo-img-select" class="waves-effect waves-light btn panjang">Tambahkan Logo</button>
                             </p>
 
@@ -551,31 +550,14 @@
                     
         
       function dlDataUrlBin(){
-             //download(gbrhasil)
-             $("#testkan").text(gbrhasil);
+             download(gbrhasil)
+            // $("#testkan").text(gbrhasil);
             }
         
 
 
 
-                        function b64toFile(b64Data, filename, contentType) {
-                            var sliceSize = 512;
-                            var byteCharacters = atob(b64Data);
-                            var byteArrays = [];
-
-                            for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
-                                var slice = byteCharacters.slice(offset, offset + sliceSize);
-                                var byteNumbers = new Array(slice.length);
-
-                                for (var i = 0; i < slice.length; i++) {
-                                    byteNumbers[i] = slice.charCodeAt(i);
-                                }
-                                var byteArray = new Uint8Array(byteNumbers);
-                                byteArrays.push(byteArray);
-                            }
-                            var file = new File(byteArrays, filename, {type: contentType});
-                            return file;
-                        }
+                       
 
     var awesomeQR;
     require(['awesome-qr'], function (instance) {
